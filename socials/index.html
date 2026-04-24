@@ -3,48 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <title>AGY</title>
+
   <style>
-/* Make buttons stack */
-a {
-  display: block;
-  width: fit-content;        /* 👈 key: size to content */
-  margin: 15px auto;         /* center horizontally */
-  padding: 12px 24px;
-  background-color: #0066cc;
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  border-radius: 8px;
-  white-space: nowrap;       /* prevents breaking into 2 lines */
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
 
-a:hover {
-  background-color: #004c99;
-}
+    /* Center everything vertically + horizontally */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 36px;          /* bigger overall text */
-    padding-top: 60px;
-  }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
 
-  a {
-    font-size: 28px;          /* bigger buttons text */
-    padding: 20px;
-    width: 90%;               /* more edge-to-edge */
-  }
-}
+    /* Buttons */
+    a {
+      display: block;
+      width: fit-content;          /* auto-fit to content */
+      margin: 12px auto;
+      padding: 12px 24px;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      border-radius: 8px;
+      white-space: nowrap;         /* keep text on one line */
+      transition: 0.2s;
+    }
+
+    a:hover {
+      background-color: #004c99;
+    }
+
+    /* 📱 Mobile adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      a {
+        font-size: 26px;
+        padding: 14px 26px;
+      }
+    }
   </style>
 </head>
-<body>
-  <h1>Select a Link</h1>
-  <a href="https://www.facebook.com/profile.php?id=61584834452764" target="_blank" rel="noopener noreferrer">
-    Facebook</a>
-  <a href="https://www.tiktok.com/@agy.night?_r=1&_t=ZS-92lRyYFfqoz" target="_blank" rel="noopener noreferrer">
-    Tiktok</a>
-  <a href="https://www.instagram.com/agy.night?igsh=dDZ3MXBrNGVlNDdn" target="_blank" rel="noopener noreferrer">
-    Instagram</a>
-  <a href="../agy" target="_blank" rel="noopener noreferrer">Lyrics  كلمات الأغاني</a>
 
+<body>
+  <div class="container">
+    <h1>Select a Link</h1>
+
+    <a href="https://www.facebook.com/profile.php?id=61584834452764" target="_blank" rel="noopener noreferrer">
+      Facebook
+    </a>
+
+    <a href="https://www.tiktok.com/@agy.night?_r=1&_t=ZS-92lRyYFfqoz" target="_blank" rel="noopener noreferrer">
+      Tiktok
+    </a>
+
+    <a href="https://www.instagram.com/agy.night?igsh=dDZ3MXBrNGVlNDdn" target="_blank" rel="noopener noreferrer">
+      Instagram
+    </a>
+
+    <a href="../agy" target="_blank" rel="noopener noreferrer">
+      Lyrics كلمات الأغاني
+    </a>
+  </div>
 </body>
 </html>
