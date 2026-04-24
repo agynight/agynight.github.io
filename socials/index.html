@@ -4,26 +4,36 @@
   <meta charset="UTF-8">
   <title>AGY</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 30px;
-      text-align: center;
-      padding-top: 100px;
-      background-color: #f9f9f9;
-    }
-    a {
-      display: inline-block;
-      margin: 20px;
-      padding: 15px 30px;
-      background-color: #0066cc;
-      color: white;
-      text-decoration: none;
-      font-size: 24px;
-      border-radius: 8px;
-    }
-    a:hover {
-      background-color: #004c99;
-    }
+/* Make buttons stack */
+a {
+  display: block;              /* 👈 change this */
+  width: 80%;                  /* optional: nice centered width */
+  max-width: 400px;
+  margin: 20px auto;           /* centers them */
+  padding: 15px 30px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+a:hover {
+  background-color: #004c99;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 36px;          /* bigger overall text */
+    padding-top: 60px;
+  }
+
+  a {
+    font-size: 28px;          /* bigger buttons text */
+    padding: 20px;
+    width: 90%;               /* more edge-to-edge */
+  }
+}
   </style>
 </head>
 <body>
