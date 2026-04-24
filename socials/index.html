@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>AGY</title>
 
+  <!-- 👇 THIS is the important fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,14 +15,14 @@
       padding: 0;
     }
 
-    /* Center everything vertically + horizontally */
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;   /* top aligned */
       min-height: 100vh;
       text-align: center;
+      padding-top: 40px;
     }
 
     h1 {
@@ -27,10 +30,9 @@
       font-size: 32px;
     }
 
-    /* Buttons */
     a {
       display: block;
-      width: fit-content;          /* auto-fit to content */
+      width: fit-content;
       margin: 12px auto;
       padding: 12px 24px;
       background-color: #0066cc;
@@ -38,7 +40,7 @@
       text-decoration: none;
       font-size: 22px;
       border-radius: 8px;
-      white-space: nowrap;         /* keep text on one line */
+      white-space: nowrap;
       transition: 0.2s;
     }
 
@@ -46,7 +48,7 @@
       background-color: #004c99;
     }
 
-    /* 📱 Mobile adjustments */
+    /* 📱 Mobile */
     @media (max-width: 600px) {
       h1 {
         font-size: 36px;
@@ -64,21 +66,10 @@
   <div class="container">
     <h1>Select a Link</h1>
 
-    <a href="https://www.facebook.com/profile.php?id=61584834452764" target="_blank" rel="noopener noreferrer">
-      Facebook
-    </a>
-
-    <a href="https://www.tiktok.com/@agy.night?_r=1&_t=ZS-92lRyYFfqoz" target="_blank" rel="noopener noreferrer">
-      Tiktok
-    </a>
-
-    <a href="https://www.instagram.com/agy.night?igsh=dDZ3MXBrNGVlNDdn" target="_blank" rel="noopener noreferrer">
-      Instagram
-    </a>
-
-    <a href="../agy" target="_blank" rel="noopener noreferrer">
-      Lyrics كلمات الأغاني
-    </a>
+    <a href="https://www.facebook.com/profile.php?id=61584834452764" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com/@agy.night" target="_blank">Tiktok</a>
+    <a href="https://www.instagram.com/agy.night" target="_blank">Instagram</a>
+    <a href="../agy" target="_blank">Lyrics كلمات الأغاني</a>
   </div>
 </body>
 </html>
