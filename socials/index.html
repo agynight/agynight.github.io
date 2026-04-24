@@ -6,16 +6,16 @@
   <style>
 /* Make buttons stack */
 a {
-  display: block;              /* 👈 change this */
-  width: 80%;                  /* optional: nice centered width */
-  max-width: 400px;
-  margin: 20px auto;           /* centers them */
-  padding: 15px 30px;
+  display: block;
+  width: fit-content;        /* 👈 key: size to content */
+  margin: 15px auto;         /* center horizontally */
+  padding: 12px 24px;
   background-color: #0066cc;
   color: white;
   text-decoration: none;
   font-size: 24px;
   border-radius: 8px;
+  white-space: nowrap;       /* prevents breaking into 2 lines */
 }
 
 a:hover {
